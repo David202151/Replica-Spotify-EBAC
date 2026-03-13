@@ -1,0 +1,79 @@
+$mainColor: rgb(0, 0, 0);
+$fontFamily: "Lexend", sans-serif;
+$colorWhite: white;
+$colorGray: #a7a7a7; 
+$contenColor: #202020; 
+$contenInfoColor: #242424; 
+$spotyColor: #1ed760; 
+$margin: 10px; 
+/* FUNCIONES SASS */
+@function spacing($multiplier) {
+    @return $margin * $multiplier;
+}
+
+@mixin grid-colums{
+    display: grid; 
+    grid-template-columns: .45fr 1fr .45fr;
+}
+@mixin grid-rows{
+    display: grid;
+    grid-row: inherit;
+}
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+}
+@mixin content{
+    margin: spacing(1);
+    border-radius: spacing(2);;
+    background-color: $contenColor;
+}
+@mixin img_cancion($width, $border){
+    width: $width;
+    border-radius: $border;
+    display: inline-block;
+}
+@mixin items($padding, $gap){
+    padding: $padding;
+    gap: $gap;
+    transition: all .2s ease;
+}
+@mixin item-border($background-color, $opacity){
+    background-color: $background-color;
+    opacity: $opacity;
+    border-radius: 100px;
+}
+@mixin text($fontSize, $fontWeigth, $color){
+    font-size: $fontSize;
+    font-weight: $fontWeigth;
+    color: $color;
+}
+@mixin backgroundImage($margin, $border-radius, $height, $background-image){
+    margin: $margin;
+    border-radius: $border-radius;
+    height: $height;
+    background-image: url($background-image);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+}
+
+/*  MIXINS PARA MEDIA QUERIES */
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+%linkStyle{
+    display: inline;
+    color: $colorGray;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}

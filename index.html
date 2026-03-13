@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styless/main.css">
+    <title>Practica del modulo 10 SASS</title>
+</head>
+<body>
+    <header>
+        <article>
+            <nav class="options__header"> 
+                <li><img src="img/home.svg" alt=""><a href="">Inicio</a></li>
+                <li><img src="img/search.svg" alt=""><a href="">Buscar</a></li>
+                <li><img src="img/menu.svg" alt=""><a href="">Tu Biblioteca</a></li>
+            </nav>
+            <nav class="buscador__header">
+                <li><a href="">Recientes</a><img src="img/list.svg" alt=""></li>
+            </nav>
+            <nav class="artistas__header">
+                <li><img src="img/mitski.jpg" alt=""><a href="">Mitski</a></li>
+                <li><img src="img/nirvana.jpg" alt=""><a href="">Nirvana</a></li>
+                <li><img src="img/aurora.jpg" alt=""><a href="">Aurora</a></li>
+                <li><img src="img/linkin-park.png" alt=""><a href="">Linking Park</a></li>
+                <li><img src="img/abba.jpg" alt=""><a href="">ABBA</a></li>
+                <li><img src="img/marias.jpg" alt=""><a href="">The Marías</a></li>
+            </nav>
+        </article>
+    </header>
+    <main>
+        <article class="music__main">
+            <section class="cabecera__main">
+                <nav>
+                    <i><img src="img/chevron-left.svg" alt=""></i>
+                    <i><img src="img/chevron-right.svg" alt=""></i>
+                </nav>
+                <section>
+                    <i><img src="img/download.svg" alt=""></i>
+                    <i><img src="img/bell.svg" alt=""></i>
+                    <i><img src="img/mitski.jpg" alt="" class="artista"></i>
+                </section>
+            </section>
+            <article>
+                <i><img src="img/spotify.svg" alt=""><p>Artista Verificado</p></i>
+                <h1>Mitski</h1>
+                <p>100.723.230 oyentes mensuales</p>
+            </article>
+            
+        </article>
+        <section class="cabecera_main--songs">
+            <ul>
+                <li><img class="pause" src="img/pause.svg" alt=""></li>
+                <p>Siguendo</p>
+                <li><img src="img/more-horizontal.svg" alt=""></li>
+            </ul>
+        </section>
+        <article class="main_songs">
+            <h1>Populares</h1>
+            <ol>
+                <li>
+                    <img src="https://cdn-images.dzcdn.net/images/cover/494fdb6075864c792809c7d9b24d6417/1900x1900-000000-80-0-0.jpg" alt="">
+                    <h2 class="name">Washing Machine Heart</h2>
+                    <p class="oyentes">1.167.036.921</p>
+                    <p class="duracion">2:08</p>
+                </li>
+                <li>
+                    <img src="https://akamai.sscdn.co/tb/next/?url=%2Fuploadfile%2Fletras%2Falbuns%2Fb%2Fa%2F8%2F1%2F655291535552067.jpg&w=3840&q=75" alt="">
+                    <h2 class="name">Francis Forever</h2>
+                    <p class="oyentes">427.346.646</p>
+                    <p class="duracion">2:29</p>
+                </li>
+                <li>
+                    <img src="https://preview.redd.it/album-covers-in-the-style-of-tliiasaw-v0-rnwvqcbvwcxd1.png?width=640&crop=smart&auto=webp&s=0e19045dd53c10d8693ff67b30180df5f6fa0444" alt="">
+                    <h2 class="name">Where's My Phone</h2>
+                    <p class="oyentes">11.999.008</p>
+                    <p class="duracion">3:09</p>
+                </li>
+                <li>
+                    <img src="https://akamai.sscdn.co/letras/360x360/albuns/c/a/6/5/813181574258878.jpg" alt="">
+                    <h2 class="name">Nobody</h2>
+                    <p class="oyentes">542.818.944</p>
+                    <p class="duracion">3:09</p>
+                </li>
+                <li>
+                    <img src="https://indierocks.sfo3.digitaloceanspaces.com/wp-content/uploads/2026/01/Mitskis-%E2%80%98Nothings-About-to-Happen-to-Me-album-artwork.-Painting-by-Marc-Burkhardt-1392x1392-1.jpg" alt="">
+                    <h2 class="name">If I Leave</h2>
+                    <p class="oyentes">3.464.363</p>
+                    <p class="duracion">3:00</p>
+                </li>
+            </ol>
+        </article>
+    </main>
+    <footer>
+        <article>
+            <section class="cabecera__footer">
+                <h2>Mitski</h2>
+                <img src="img/mitski.gif" alt="">
+            </section>
+            <section class="contenido__footer">
+                <div>
+                    <h2>I Ben on Losing Dogs</h2>
+                </div>
+                <div class="contenido__footer--icons">
+                    <img src="img/heart.svg" alt="">
+                    <img src="img/more-horizontal.svg" alt="">
+                </div>
+            </section>
+            <article class="info__footer">
+                <section>
+                    <h2>Información del artista</h2>
+                </section>
+                <p>Mitski is currently writing the music and lyrics for the musical adaptation of The Queen's Gambit. 
+                Her concert film, Mitski: The Land, recently had its cinematic release in 27 countries, and was accompanied by The Land: 
+                The Live Album.</p>
+            </article>
+        </article>
+    </footer>
+</body>
+</html>
